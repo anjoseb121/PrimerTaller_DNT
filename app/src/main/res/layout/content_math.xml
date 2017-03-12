@@ -14,4 +14,94 @@
     tools:context="com.ajbe.primertaller.presentation.MathActivity"
     tools:showIn="@layout/activity_math">
 
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_first_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_first_number"
+            android:hint="@string/hint_first_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_second_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout_first_number"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/edit_second_number"
+            android:hint="@string/hint_second_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:text="@string/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_min"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:id="@+id/textView_result"
+        tools:text="56"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:text="@string/label_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_result"
+        android:layout_toStartOf="@+id/textView_result"
+        android:layout_marginEnd="28dp"
+        android:id="@+id/textView_result_label"
+        tools:text="Resultado"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:text="@string/btn_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_min"
+        android:layout_below="@+id/input_layout_second_number"
+        android:layout_toEndOf="@+id/textView_result"/>
+
+    <Button
+        android:text="@string/btn_mcm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_mcm"
+        android:layout_below="@+id/input_layout_second_number"
+        android:layout_toEndOf="@+id/button_min"/>
+
+    <Button
+        android:text="@string/btn_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_max"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/input_layout_second_number"
+        android:layout_toStartOf="@+id/textView_result"/>
+
+    <Button
+        android:text="@string/btn_pow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_pow"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@+id/input_layout_second_number"
+        android:layout_toStartOf="@+id/button_max"/>
+
 </RelativeLayout>

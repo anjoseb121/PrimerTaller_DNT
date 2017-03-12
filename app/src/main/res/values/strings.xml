@@ -4,10 +4,10 @@
     <string name="action_settings">Settings</string>
 
     <array name="icons">
-        <item>@drawable/ic_ac_unit</item>
-        <item>@drawable/ic_collections</item>
-        <item>@drawable/ic_compare_arrows</item>
         <item>@drawable/ic_exposure_plus_1</item>
+        <item>@drawable/ic_ac_unit</item>
+        <item>@drawable/ic_compare_arrows</item>
+        <item>@drawable/ic_collections</item>
         <item>@drawable/ic_people</item>
     </array>
     <string name="title_activity_login">LoginActivity</string>
@@ -22,4 +22,12 @@
     <string name="toastErrorUserField">Debes llenar este campo</string>
     <string name="description_item_image"/>
     <string name="description_image_login"/>
+    <string name="hint_first_number">One number</string>
+    <string name="hint_second_number">Another number</string>
+    <string name="zero">0</string>
+    <string name="label_result">Resultado:</string>
+    <string name="btn_min">Menor</string>
+    <string name="btn_mcm">MCM</string>
+    <string name="btn_max">Mayor</string>
+    <string name="btn_pow">Potencia</string>
 </resources>
