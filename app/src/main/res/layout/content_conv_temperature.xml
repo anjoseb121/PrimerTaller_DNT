@@ -24,7 +24,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/edit_hint_temperature"
+            android:hint="@string/hint_temperature"
             android:inputType="number"
             android:id="@+id/editText_temperature"
             android:text="@string/zero"
