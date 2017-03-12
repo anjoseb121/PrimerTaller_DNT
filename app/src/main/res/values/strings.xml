@@ -52,4 +52,5 @@
         <item>Hexadecimal</item>
     </string-array>
     <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
 </resources>
