@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.ajbe.primertaller.R;
 import com.ajbe.primertaller.presentation.ConvertBaseActivity;
 import com.ajbe.primertaller.presentation.ConvertTemperatureActivity;
+import com.ajbe.primertaller.presentation.GalleryActivity;
 import com.ajbe.primertaller.presentation.MathActivity;
 
 /**
@@ -75,7 +76,7 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Vi
                     context.startActivity(new Intent(context, ConvertBaseActivity.class));
                     break;
                 case 3:
-                    Toast.makeText(context, "Three", Toast.LENGTH_SHORT).show();
+                    context.startActivity(new Intent(context, GalleryActivity.class));
                     break;
                 case 4:
                     Toast.makeText(context, "Four", Toast.LENGTH_SHORT).show();

@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ajbe.primertaller.presentation.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.ajbe.primertaller.presentation.GalleryActivity"
+    tools:showIn="@layout/activity_gallery">
 
-    <android.support.v7.widget.RecyclerView
+    <com.veinhorn.scrollgalleryview.ScrollGalleryView
+        android:id="@+id/scroll_gallery_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/recycler_activities"/>
+        android:background="#000"/>
+
 </RelativeLayout>
