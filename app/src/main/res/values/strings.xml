@@ -10,4 +10,14 @@
         <item>@drawable/ic_exposure_plus_1</item>
         <item>@drawable/ic_people</item>
     </array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_math">MathActivity</string>
+    <string name="hint_user">User</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_text_forget">Forget Password</string>
+    <string name="btn_text_login">Log in</string>
+    <string name="loginSnackMessage">Recordar contraseña</string>
+    <string name="loginSnackActionText">Enviar</string>
+    <string name="toastMessageEmail">Pasos enviados al correo</string>
+    <string name="toastErrorUserField">Debes llenar este campo</string>
 </resources>
