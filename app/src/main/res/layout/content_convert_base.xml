@@ -25,21 +25,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_first_number"
-            android:id="@+id/editText_first_number"/>
+            android:id="@+id/editText_first_number_base"
+            android:minLines="1"
+            android:text="@string/zero"/>
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
+
+    <Spinner
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:id="@+id/textInputLayout2"
+        android:entries="@array/bases"
+        android:id="@+id/spinner_bases_from"
         android:layout_below="@+id/textInputLayout"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_second_number"
-            android:id="@+id/editText_second_number"/>
-    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_bases_to"
+        android:entries="@array/bases"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_toEndOf="@+id/spinner_bases_from"
+        android:layout_marginStart="31dp"/>
+
+    <Button
+        android:text="@string/btn_convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_bases_to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_convert"/>
+
+    <TextView
+        android:text="@string/label_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_convert"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:id="@+id/textView"
+        style="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:text="@string/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="17dp"
+        android:id="@+id/textView_result_base"
+        style="?android:attr/textAppearanceLarge"/>
 </RelativeLayout>

@@ -36,6 +36,7 @@
     <!-- Toasts -->
     <string name="toastMessageEmail">Pasos enviados al correo</string>
     <string name="toastErrorUserField">Debes llenar este campo</string>
+    <string name="btn_convertir">Convertir</string>
     <!-- Arrays -->
     <array name="icons">
         <item>@drawable/ic_exposure_plus_1</item>
@@ -44,10 +45,10 @@
         <item>@drawable/ic_collections</item>
         <item>@drawable/ic_people</item>
     </array>
-    <array name="bases">
+    <string-array name="bases">
         <item>Decimal</item>
         <item>Binario</item>
         <item>Octal</item>
         <item>Hexadecimal</item>
-    </array>
+    </string-array>
 </resources>
