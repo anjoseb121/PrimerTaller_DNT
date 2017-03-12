@@ -1,0 +1,13 @@
+<resources>
+    <!-- App texts -->
+    <string name="app_name">Primer Taller</string>
+    <string name="action_settings">Settings</string>
+
+    <array name="icons">
+        <item>@drawable/ic_ac_unit</item>
+        <item>@drawable/ic_collections</item>
+        <item>@drawable/ic_compare_arrows</item>
+        <item>@drawable/ic_exposure_plus_1</item>
+        <item>@drawable/ic_people</item>
+    </array>
+</resources>
