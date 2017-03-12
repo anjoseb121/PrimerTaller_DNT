@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_conv_temperature"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ajbe.primertaller.presentation.ConvertTemperatureActivity"
+    tools:showIn="@layout/activity_conv_temperature">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_hint_temperature"
+            android:inputType="number"
+            android:id="@+id/editText_temperature"
+            android:text="@string/zero"
+            android:minLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupFrom"
+        android:layout_below="@+id/textInputLayout"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:checkedButton="@+id/rb_from_celsius">
+
+        <RadioButton
+            android:text="@string/rb_text_celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_from_celsius"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/rb_text_kelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_from_kelvin"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/rb_text_fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_from_fah"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/rb_text_rankine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_from_rankine"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupTo"
+        android:layout_below="@+id/radioGroupFrom"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:checkedButton="@+id/rb_to_fah">
+
+        <RadioButton
+            android:text="@string/rb_text_celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_to_celsius"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/rb_text_kelvin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_to_kelvin"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:text="@string/rb_text_fahrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_to_fah"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:text="@string/rb_text_rankine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_to_rankine"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupTo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        style="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_result_label"
+        android:text="@string/label_result"/>
+
+    <TextView
+        android:text="@string/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_result_label"
+        android:layout_toEndOf="@+id/textView_result_label"
+        android:layout_marginStart="14dp"
+        style="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView_result_temperature"/>
+
+</RelativeLayout>

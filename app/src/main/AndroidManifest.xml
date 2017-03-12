@@ -3,8 +3,8 @@
           package="com.ajbe.primertaller">
 
     <application
-        android:fullBackupContent="true"
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
@@ -27,6 +27,15 @@
         <activity
             android:name=".presentation.MathActivity"
             android:label="@string/title_activity_math"
+            android:parentActivityName=".presentation.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ajbe.primertaller.presentation.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".presentation.ConvertTemperatureActivity"
+            android:label="@string/title_activity_conv_temperature"
             android:parentActivityName=".presentation.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

@@ -30,4 +30,10 @@
     <string name="btn_mcm">MCM</string>
     <string name="btn_max">Mayor</string>
     <string name="btn_pow">Potencia</string>
+    <string name="title_activity_conv_temperature">ConvTemperatureActivity</string>
+    <string name="edit_hint_temperature">Temperature</string>
+    <string name="rb_text_celsius">Centigrados</string>
+    <string name="rb_text_kelvin">Kelvin</string>
+    <string name="rb_text_fahrenheit">Fahrenheit</string>
+    <string name="rb_text_rankine">Rankine</string>
 </resources>
