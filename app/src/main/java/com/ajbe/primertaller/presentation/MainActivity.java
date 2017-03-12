@@ -2,7 +2,6 @@ package com.ajbe.primertaller.presentation;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -14,8 +13,6 @@ import com.ajbe.primertaller.adapter.ActivitiesAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_activities);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_activities);
         ActivitiesAdapter adapter = new ActivitiesAdapter(this);
-        mRecyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
         StaggeredGridLayoutManager gridLayoutManager =
                 new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-        mRecyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setLayoutManager(gridLayoutManager);
     }
 
     @Override

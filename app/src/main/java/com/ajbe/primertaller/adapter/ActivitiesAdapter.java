@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.ajbe.primertaller.R;
 
 /**
- * Created by HP on 3/11/2017.
+ * Created by HP on 3/11/2017. For UAC
  */
 public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.ViewHolder> {
 
@@ -42,7 +42,7 @@ public class ActivitiesAdapter extends RecyclerView.Adapter<ActivitiesAdapter.Vi
 
     static class ViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView imageView;
+        final ImageView imageView;
 
         ViewHolder(View itemView) {
             super(itemView);

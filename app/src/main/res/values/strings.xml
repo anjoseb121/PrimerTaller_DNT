@@ -20,4 +20,6 @@
     <string name="loginSnackActionText">Enviar</string>
     <string name="toastMessageEmail">Pasos enviados al correo</string>
     <string name="toastErrorUserField">Debes llenar este campo</string>
+    <string name="description_item_image"/>
+    <string name="description_image_login"/>
 </resources>
